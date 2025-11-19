@@ -13,7 +13,8 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=64G
 #SBATCH --time=02:00:00
-# (Removed exclusion — both node1 and node2 are valid)
+# Exclude node1 from this job's eligible nodes
+#SBATCH --exclude=node1
 
 echo "=============================="
 echo "Starting job $SLURM_JOB_ID on $(hostname)"
