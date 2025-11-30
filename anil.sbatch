@@ -12,7 +12,7 @@
 #SBATCH --gres=shard:H100:1      # ✅ correct for your cluster
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=64G
-#SBATCH --time=02:00:00
+##SBATCH --time=02:00:00
 # Exclude node1 from this job's eligible nodes
 #SBATCH --exclude=node1
 
